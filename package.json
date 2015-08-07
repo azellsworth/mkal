@@ -11,6 +11,10 @@
   "bin":{
     "mkal": "mkal.sh"
   },
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/azellsworth/mkal"
+  },
   "keywords": [
     "alias"
   ],
