@@ -4,9 +4,9 @@
   "description": "Makes an alias for the present working directory",
   "main": "mkal.sh",
   "scripts": {
-    "preinstall": "sed -i '' -e '$a\\' ~/.bash_profile && echo alias mkal=\\\"source mkal\\\">>  ~/.bash_profile",  
+    "preinstall": "source ./preinstall.sh",  
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "echo '################################## \nIn order for mkal to work for the first time\nPlease run the following code in your command line: . ~/.bash_profile\n##################################\n\nUsing mkal: Go to a directory and type: mkal <shortcut name>\nLater, you can type <shortcut name> from any location to return to that directory\n'"
+    "postinstall": "source ./postinstall.sh"
   },
   "bin":{
     "mkal": "mkal.sh"
